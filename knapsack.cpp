@@ -36,12 +36,10 @@ double fractionalKnapsack(int W, vector<Item>& items) {
 int main() {
     int W = 50; 
     Item a = {10 , 40};
-    cout << a.weight<< endl;
-    cout << a.value << endl;
-    // vector<Item> items = {{60, 10}, {100, 20}, {120, 30}};
+    vector<Item> items = {{60, 10}, {100, 20}, {120, 30}};
 
-    // double maxValue = fractionalKnapsack(W, items);
-    // cout << "Maximum value in Knapsack = " << maxValue << endl;
+    double maxValue = fractionalKnapsack(W, items);
+    cout << "Maximum value in Knapsack = " << maxValue << endl;
 
     return 0;
 }
