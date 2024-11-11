@@ -16,10 +16,7 @@ int LCSLength(string s1, string s2,int m, int n, vector<vector<int>> &dp){
     else{
         dp[m][n] = max(LCSLength(s1, s2, m-1, n, dp), LCSLength(s1, s2, m, n-1, dp));
     }
-    return dp[m][n]=]\
-    [
-        [\
-        ]7]
+    return dp[m][n];
 }
 
 int main(){
