@@ -735,3 +735,82 @@ int main(){
 ```
 
 ![[Pasted image 20241116203133.png]]
+
+
+# 0/1 Knapsack
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+using namespace std;
+
+int knapsack(int W, const vector<int>& weights, const vector<int>& values, int n) {
+    vector<vector<int>> dp(n + 1, vector<int>(W + 1, 0));
+
+    for (int i = 1; i <= n; ++i) {
+        for (int w = 0; w <= W; ++w) {
+            if (weights[i - 1] <= w) {
+                dp[i][w] = max(dp[i - 1][w], dp[i - 1][w - weights[i - 1]] + values[i - 1]);
+            } else {
+                dp[i][w] = dp[i - 1][w];
+            }
+        }
+    }
+
+    return dp[n][W];
+}
+
+int main() {
+    int W = 50; 
+    vector<int> weights = {10, 20, 30}; 
+    vector<int> values = {60, 100, 120}; 
+    int n = weights.size(); 
+
+    cout << "Maximum value in Knapsack = " << knapsack(W, weights, values, n) << endl;
+
+    return 0;
+}
+```
+
+![[Pasted image 20241117214534.png]]
+
+
+# Matrix multiplication by starssen method 
+```cpp
+#include <iostream>
+#include <vector>
+#include <limits.h>
+
+using namespace std;
+
+int matrixChainOrder(vector<int> &p, int n) {
+    vector<vector<int>> m(n, vector<int>(n, 0));
+
+    for (int L = 2; L < n; L++) {
+        for (int i = 1; i < n - L + 1; i++) {
+            int j = i + L - 1;
+            m[i][j] = INT_MAX;
+            for (int k = i; k <= j - 1; k++) {
+                int q = m[i][k] + m[k + 1][j] + p[i - 1] * p[k] * p[j];
+                if (q < m[i][j]) {
+                    m[i][j] = q;
+                }
+            }
+        }
+    }
+
+    return m[1][n - 1];
+}
+
+int main() {
+    vector<int> p = {1, 2, 3, 4};
+    int n = p.size();
+
+    cout << "Minimum number of multiplications is " << matrixChainOrder(p, n) << endl;
+
+    return 0;
+}
+```
+
+![[Pasted image 20241117214808.png]]
