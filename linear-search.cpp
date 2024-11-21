@@ -1,20 +1,24 @@
 #include<iostream>
+#include<vector>
 using namespace std;
-bool search(int *arr, int n, int key);
+
+bool search(vector<int> &arr, int key);
+
 int main(){
-    int n = 7, arr[n] = {1,2,3,4,5,6}, key = 5, result;
-    int res = search(arr, n , key);
-    if(res == 1)
-	    cout << "found" << endl;
+    vector<int> arr = {1, 2, 3, 4, 5, 6};
+    int key = 5;
+    bool res = search(arr, key);
+    if(res)
+        cout << "found" << endl;
     else
-	    cout << "not found"<< endl;
-	return 0;
+        cout << "not found" << endl;
+    return 0;
 }
 
-bool search(int *arr, int n, int key){
-    for(int i =0 ; i < n; i++){
-        if(*(arr+i) == key)
-            return 1;
+bool search(vector<int> &arr, int key){
+    for(int i = 0; i < arr.size(); i++){
+        if(arr[i] == key)
+            return true;
     }
-    return 0;
+    return false;
 }
