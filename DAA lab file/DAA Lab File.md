@@ -1,8 +1,4 @@
-<h1 align='center'>Tavaheed tariq </h1>
-<h2 align='center'>Enrollment Number: 2022BITE008</h2>
-<h2 align='center'>Design and Analysis of Algorithms Lab</h2>
-
-# Binary Search
+# 1.Write a program using divide and conquer for binary search  
 ```cpp
 #include <iostream>
 #include <bits/stdc++.h>
@@ -29,7 +25,7 @@ int main(){
 
 ![[Pasted image 20241116203237.png]]
 
-# Merge Sort
+# 2.Write a program using divide and conquer for merge sort  
 ```cpp
 // merge sort using divide and conquer
 
@@ -84,7 +80,7 @@ void mergeSort(vector<int> &arr, int s, int e){
 ```
 
 ![[Pasted image 20241116203258.png]]
-# Fractional Knapsack
+# 3.Write a program using greedy for fractional knapsack  
 ```cpp
 #include <iostream>
 #include <vector>
@@ -134,7 +130,7 @@ int main() {
 ```
 
 ![[Pasted image 20241116203324.png]]
-# GCD
+# 4.Write a program using divide and conquer for GCD of two numbers  
 ```cpp
 #include <iostream>
 using namespace std;
@@ -156,7 +152,7 @@ int main(){
 ```
 
 ![[Pasted image 20241116203345.png]]
-# Huffman Coding
+# 5.Write a program using greedy for Huffman coding
 
 ```cpp
 #include <iostream>
@@ -254,7 +250,7 @@ int main() {
 ```
 
 ![[Pasted image 20241116203407.png]]
-# Job Sequencing
+# 6.Write a program using greedy for job sequencing
 
 ```cpp
 #include <iostream>
@@ -316,7 +312,7 @@ int main()
 ```
 
 ![[Pasted image 20241116203425.png]]
-# Linear Search
+# 7.Write a program for linear search
 
 ```cpp
 #include<iostream>
@@ -342,7 +338,7 @@ bool search(int *arr, int n, int key){
 
 ![[Pasted image 20241116202536.png]]
 
-# Minimum Heap
+# 8.write a program to create a minimum heap
 
 ```cpp
 #include<iostream>
@@ -411,7 +407,7 @@ int main(){
 ```
 
 ![[Pasted image 20241116203527.png]]
-# Maximum Heap
+# 9.write a program to create a maximum heap
 
 ```cpp
 #include<iostream>
@@ -478,7 +474,7 @@ int main(){
 } 
 ```
 ![[Pasted image 20241116203602.png]]
-# Max and Min in array
+# 10.write a program to find max and min element in an array
 ```cpp
 #include <iostream>
 #include <vector>
@@ -521,7 +517,7 @@ int main() {
 ```
 ![[Pasted image 20241116202702.png]]
 
-# Power of Element
+# 11.write a program using divide and conquer for power of an element
 
 ```cpp
 #include<iostream>
@@ -546,7 +542,7 @@ int main(){
 }
 ```
 ![[Pasted image 20241116203621.png]]
-# Selection Procedure
+# 12.Use selection procedure having an input --> unsorted array of integers and k as an integer, find the kth smallest element
 
 ```cpp
 // use selection procedure having an input --> unsorted array of integers and k as an integer , find the kth smallest element 
@@ -589,7 +585,7 @@ int main(){
 }
 ```
 ![[Pasted image 20241116204338.png]]
-# Quick Sort
+# 13.write a program using divide and conquer for Quick sort
 
 ```cpp
 #include<iostream>
@@ -639,7 +635,7 @@ int main(){
 ```
 
 ![[Pasted image 20241116204358.png]]
-# Array Heapify
+# 14.Create an array of n elements and then use min heapify and max heapify to create a min heap and max heap
 
 ```cpp
 // create an array of n elements and then use min heapity and max heapity to create a min heap and max heap respectively.
@@ -697,7 +693,7 @@ int main(){
 ```
 
 ![[Pasted image 20241116204416.png]]
-# Least Common sequence
+# 15.write a program using dynamic programming to find least common sub-sequence of 2 strings
 ```cpp
 #include<iostream>
 #include<bits/stdc++.h>
@@ -737,7 +733,7 @@ int main(){
 ![[Pasted image 20241116203133.png]]
 
 
-# 0/1 Knapsack
+# 16.write a program using dynamic programming for 0/1 knapsack
 ```cpp
 #include <iostream>
 #include <vector>
@@ -776,7 +772,7 @@ int main() {
 ![[Pasted image 20241117214534.png]]
 
 
-# Matrix multiplication by starssen method 
+# 17.write a program using dynamic programming for matrix chain multiplication to find minimum number of multiplications to multiply 2 matrices 
 ```cpp
 #include <iostream>
 #include <vector>
